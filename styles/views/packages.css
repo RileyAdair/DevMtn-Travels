@@ -48,10 +48,13 @@
 @media(min-width: 800px) {
     .packages-main {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .package-card {
-        padding-bottom: 20px;
+      padding-bottom: 20px;
+      width: 50%;
+
     }
 
     .package-card img {
@@ -77,4 +80,16 @@
       align-self: flex-end;
 
     }
+}
+
+@media(min-width: 1100px){
+  .package-card {
+    width: 33.333333%;
+  }
+}
+
+@media(min-width: 1400px){
+  .package-card {
+    width: 25%;
+  }
 }
